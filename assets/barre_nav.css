@@ -1,0 +1,215 @@
+
+
+body {
+    background-image: url(../images/Geralt.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    size: 100%;
+    position: fixed;
+}
+
+.logo_titre{
+    position: absolute;
+    width:300px;
+    height: 150px;
+    padding: 1em 2em;
+}
+
+#en_tete #barre_navigation_phone{
+    display:none;
+}
+
+#en_tete #barre_navigation{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    border: solid 0.1px;
+    background-color: rgba(98, 13, 13, 0.5);
+}
+
+#en_tete #barre_navigation .contenu_barre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#en_tete #barre_navigation .contenu_barre .logo{
+    margin-top: .8em;
+    position: relative;
+    z-index: 5;
+    position: sticky;
+    width: 50px;
+}
+
+#en_tete #barre_navigation .contenu_barre .bouton_barre{
+    padding: 1em 3em;
+    list-style: none;   
+    margin-top: .5em; 
+    margin-bottom: auto;
+}
+
+#en_tete #barre_navigation .contenu_barre .bouton_barre a{
+    text-decoration: none;
+    color: cornsilk;
+    border: 3px solid transparent;
+    padding: 1em 3em;
+    transition: border 0.5s ease-in-out;
+}
+
+#en_tete #barre_navigation .contenu_barre .bouton_barre a:hover{
+    border-color: cornsilk;
+}
+
+#bloc_section_1{
+    display: flex;
+    width: 90%;
+    height: 600px;
+    border: 3px solid cornsilk;
+    background:  rgba(98, 13, 13, 0.5);
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: auto;
+    color: cornsilk;
+    text-transform: inherit;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#bloc_section_1 #article{
+    display: block;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    align-items: center;
+    overflow: auto;
+}
+
+#bloc_section_1 #article p{
+    padding: .5em 1em;
+    margin-right: 20px;
+}
+
+#bloc_section_1 #article h2{
+    text-align: center;
+    size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 2em 2em;
+}
+
+#bloc_section_1 #article .image_section{
+    width:100%;
+    height: auto;
+    align-items: center;
+}
+
+.none{
+    display:none;
+}
+
+
+@media (max-width:1368px) {
+    #en_tete #barre_navigation .contenu_barre{
+        display: none;
+    }
+    #en_tete #barre_navigation_phone{
+        display:block;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        border: solid 0.1px;
+        background-color: rgba(98, 13, 13, 0.5);
+    }
+    #en_tete #barre_navigation_phone .contenu_phone_barre{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #en_tete #barre_navigation_phone .contenu_phone_barre .bouton_phone_barre{
+        list-style: none;   
+        margin-top: .5em; 
+        margin-bottom: auto;
+    }
+
+    #en_tete #barre_navigation_phone .contenu_phone_barre .bouton_phone_barre .logo_phone{
+        width: 50px;
+    }
+
+    #en_tete #barre_navigation_phone .contenu_phone_barre .bouton_phone_barre a{
+        text-decoration: none;
+        color: cornsilk;
+    }
+
+    #en_tete #barre_navigation_phone .contenu_phone_barre .bouton_phone_barre #burger{
+        display:block;
+        position: right;       
+    }
+
+    #en_tete #barre_navigation_phone .contenu_phone_barre .bouton_phone_barre #burger .icone_burger{
+        width: 50px;
+    }
+
+    #en_tete #barre_navigation_phone #contenu_menu_deroulant{
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #en_tete #barre_navigation_phone #contenu_menu_deroulant .bouton_menu_deroulant{
+        list-style: none;   
+        margin-top: .5em; 
+        margin-bottom: auto;
+    }
+    #en_tete #barre_navigation_phone #contenu_menu_deroulant .bouton_menu_deroulant a{
+        text-decoration: none;
+        color: cornsilk;
+    }
+    #bloc_section_1{
+        display: flex;
+        width: 90%;
+        height: 600px;
+        top: 0;
+        border: 3px solid cornsilk;
+        background:  rgba(98, 13, 13, 0.5);
+        margin-left: 5%;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: auto;
+        color: cornsilk;
+        text-transform: inherit;
+        overflow: hidden;
+        z-index: 10;
+    }
+    #bloc_section_1 #article{
+        margin-top: 20%;
+    }
+    
+}
+
+@media (max-width:945px) {
+    #bloc_section_1 #article h2{
+        margin-top: 20%;
+    }
+}
+
+@media (max-width:628px) {
+    #bloc_section_1 #article{
+        margin-top: 30%;
+    }
+}
+
+@media (max-width:450px) {
+    #bloc_section_1 #article{
+        margin-top: 40%;
+    }
+}
